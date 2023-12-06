@@ -1,0 +1,29 @@
+Convenzione ISPRA/INFO-RAC e IREA per attività Knowledge Hub - impiego modelli di deep learning per il retrieval semantico di documenti.
+
+La necessità del task in cui siete coinvolti è di costruire un benchmark per la valutazione di modelli deep-learning per il natural language processing impiegati in un task di semantic information retrieval.
+L'attività che viene proposta qui è la formulazione da parte vostra di un certo numero di query (10) in linguaggio naturale e la classificazione dei documenti allegati in "pertinente/non pertinente" rispetto ad ognuna delle query.
+
+Le query possono essere formulate in linguaggio naturale, e possono essere semplici (es. "sea accidents and lesson learnt") o più complesse (es. "sustainable development and recommendations for life style and consumption awareness").
+
+L'archivio che avete ricevuto contiene, oltre a questo file di istruzioni:
+1. Cartella "pdf": una selezione di 50 documenti PDF individuati nelle fasi precedenti della convenzione e scaricati da diversi archivi, sottoposti alla vostra attenzione;
+2. File "query.xlsx";
+3. File "pdf-query.xlsx" con diverse colonne, alcune ad uso tecnico che sono state nascoste per vostra comodità e che vi preghiamo di non alterare.
+   Le colonne utili al vostro lavoro sono invece:
+    - "pdf_filename": è il file pdf cui la riga si riferisce, che trovate nella cartella "pdf". 
+    - "title": è il titolo del file così come esposto dal catalogo dal quale abbiamo scaricato il pdf.
+    - "original_pdf_filename": è il nome con il quale il file era stato salvato originariamente. E' un campo 
+                               che pensiamo possa esservi utile, ma attenzione perché non troverete questi nomi nella cartella "pdf". 
+    - "publisher": è il catalogo di provenienza del documento (es. rempec, unep, etc.)
+    - colonne "q1", .... , "q10": sono le colonne che dovrete compilare con valori 0 e 1
+
+
+
+L'esercizio che vi si propone è quindi di:
+- formulare 10 query e inserirle nel file "query.xlsx": a ogni riga corrisponde una query, il cui testo va messo nella colonna "query_text". C'è anche un campo "note", opzionale, per eventuali vostre annotazioni o segnalazioni.
+- nel secondo file Excel, "pdf-query.xlsx", ad ogni riga corrisponde invece uno dei 50 documenti, mentre i risultati della vostra indagine vanno riportati nelle colonne q1...q10: 
+inserite qui per ogni query un valore 0 o 1 in base alla rilevanza del documento rispetto alla query: 0 indica che il documento non è pertinente alla query, 1 che il documento è pertinente. OGNI DOCUMENTO DEVE ESSERE VALUTATO RISPETTO AD OGNI QUERY.
+
+Alla fine della vostra attività inviate per email  (SENZA MODIFICARE IL NOME DEI FILE) i due excel compilati agli indirizzi paolo.tagliolatoacquavivadar@cnr.it e alessandro.oggioni@cnr.it
+
+
